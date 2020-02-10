@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!---Fonts--->
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:600i,700&display=swap" rel="stylesheet">
+
+  <!---Styles--->
+  <link rel="stylesheet" href="css/main-style.css">
+  <link rel="stylesheet" href="css/second-style.css">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+
+<body>
+  <!---TITLE--->
+  <header>
+    <div class="top-title">
+      <img src="images/logo.svg" alt="logo">
+
+      <div class="score-box">
+        <span class="score">Score</span>
+        <span class="score-points">0</span>
+      </div>
+    </div>
+
+    <div class="rules">
+      Rules
+    </div>
+  </header>
+
+
+  <!---MAIN SCENE--->
+  <div class="container">
+
+    <div class="box">
+      <div class="row">
+        <img class="triangle" src="images/bg-triangle.svg" alt="triangle">
+        <button class="btn round paper"></button>
+        <button class="btn round scissors"></button>
+      </div>
+      <button class="btn round rock"></button>
+    </div>
+
+  </div>
+
+
+  <!---SECOND SCENE--->
+  <div class="second-scene">
+
+    <div class="plays">
+      <div>
+        <div class="players">You Picked</div>
+        <div id="player-pick" class=""></div>
+      </div>
+      <div class="who-win">
+        <span class="decision"></span>
+        <button class="play-again"></button>
+      </div>
+      <div>
+        <div class="players">The House Picked</div>
+        <div id="computer-pick" class="loading-round"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Axel01011111">Axel</a>.
+  </div>
+
+  <script src="js/index.js" charset="utf-8"></script>
+</body>
+
+</html>
