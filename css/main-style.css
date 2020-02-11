@@ -33,6 +33,7 @@ body {
 }
 
 .score {
+  padding-top: 5px;
   letter-spacing: 1px;
   font-size: 1rem;
   color: #2a46c0;
@@ -75,7 +76,7 @@ body {
   border-radius: 100%;
 }
 
-.btn{
+.btn {
   transition: all .3s ease-out;
 }
 
@@ -98,6 +99,11 @@ body {
   background-color: white;
   border: 20px solid #dd405d;
   box-shadow: inset 0 10px 5px 0 rgba(122, 122, 143, 0.50), 0 10px 0 0 rgb(196, 33, 63);
+}
+
+.aura {
+  box-shadow: 0 0 0 2rem hsla(0, 0%, 100%, 0.4),
+    0 0 0 4rem hsla(0, 0%, 100%, 0.2), 0 0 0 6rem hsla(0, 0%, 100%, 0.1);
 }
 
 /*button positions*/
@@ -128,3 +134,45 @@ body {
 .attribution a {
   color: #3e52a3;
 }
+
+/*---MEDIA QUERY---*/
+@media (max-width: 1000px) {
+  .container {
+    margin: 5% 10%;
+  }
+}
+
+@media (max-width: 500px) {
+  /*HEADER*/
+  .rules {
+    right: 30%;
+  }
+
+  .top-title {
+    margin: 0 0 5%;
+  }
+
+  .top-title img {
+    padding-top: 15px;
+    width: 35%;
+    height: 35%;
+  }
+
+  .score-box {
+    width: 30%;
+  }
+
+  /*BODY*/
+  .container {
+    margin: 0;
+    width: 100%;
+  }
+
+  /*FOOTER*/
+  .attribution {
+    margin-top: 30%;
+    position: static;
+    font-size: 8px;
+  }
+}
+
